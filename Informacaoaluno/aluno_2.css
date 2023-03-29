@@ -1,0 +1,49 @@
+:root {
+    --azul_titulo: #0c145c;
+    --branco: #FFFFFF;
+}
+
+body{
+    width: 820px;
+    font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.75em;
+    margin: auto 0
+}
+
+.div__titulo{
+    background-color: var(--azul_titulo);
+    color: var(--branco);
+    font-size: 20px;
+    text-align: center;
+}
+
+.input__formato{
+    border-radius: 6px;
+}
+
+.div__botao{
+    text-align: center;
+}
+
+.div__rodape{
+    background-color: var(--azul_titulo);
+    font-size: 0.5em;
+    color: var(--branco);
+    text-align: center;
+    margin: 2em 0;
+    padding: 0.5em;
+}
+
+.button__effect:hover{
+    background-color: var(--azul_titulo);
+    color: var(--branco);
+    font-weight: bold;
+    border: #000000 1px solid;
+    cursor: pointer;
+    height: 1.6em;
+    transition: 0.7s;
+}
+
+.input__foco:focus{
+    background-color: #d8dce7
+}
