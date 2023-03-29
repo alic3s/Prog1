@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Informações sobre alunos</title>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <header>
+        <div class="div__titulo">
+            Informações sobre alunos
+        </div>
+    </header>
+
+    <body>
+        <main>
+            <p>
+                <label for="tNome">
+                Nome: <input class="input__formato input__foco" name="tNome" id="tNome" type="text" size="50" maxlength="50" placeholder="Seu nome completo">
+                </label>
+            </p>
+        
+        <p> 
+            <label>
+                Data de nascimento: <input class="input__formato input__foco" name="dnascimento" type="Date"> </p>
+            </label>
+        
+        <p> 
+            <label>
+                Gênero: <select class="input__formato input__foco" name="sgenero">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <option value="P">Prefiro não informar</option>
+            </select>
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Curso <select class="input__formato input__foco" name="scurso">
+                    <option value="1">Tecnologia em Anáise de Sistemas</option>
+                    <option value="2">Química de Alimentos</option>
+                    <option value="3">Hotelaria e Turismo</option>
+                    <option value="4">Engenharia Civil</option>
+                    <option value="5">Engenharia Ambiental</option>
+                </select>
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Período: <input class="input__formato input__foco" name="nperiodo" type="number" step="1" min="1" max="4">
+            </label>
+        </p>
+
+        <p>
+            Horário de trabalho:
+            </br>
+            <input type="checkbox" name="cbmanha"> Manhã
+            </br>
+            <input type="checkbox" name="cbtarde"> Tarde
+            </br>
+            <input type="checkbox" name="cbNoite"> Noite
+        </p>
+
+        <p>
+            <label>
+                Informações Complementares
+                </br>
+                <textarea class="input__formato "name="taInformacoes" id="taInformacoes" cols="60" rows="5" placeholder="Registre aqui outras informações que você considera importante."></textarea>
+            </label>  
+        </p>
+
+        <div class="div__botao"> 
+            <input type="button" name="btEnviar" value="Enviar" class="button__effect"> 
+       </div>
+
+    </body>
+    <footer>
+        <div class="div__rodape">
+            Todos os direitos reservados para 3º TADS
+        </div>
+    </footer>
+</html>
