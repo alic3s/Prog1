@@ -47,3 +47,34 @@ body{
 .input__foco:focus{
     background-color: #d8dce7
 }
+
+.div__menu{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: transparent;
+    border: 2px #000000 solid;
+}
+
+.menu__opcao{
+    text-align: center;
+    padding: 1em;
+    font-weight: bolder;
+    width: 30%;
+}
+
+.menu__opcao:hover{
+    background-color: black;
+    color: white
+}
+
+a{
+    width: 50%;
+    text-decoration: none;
+    color: #047a43;
+    background-color: transparent;
+}
+
+a:hover{
+    background-color: black;
+}
