@@ -1,0 +1,88 @@
+:root {
+    --azul_titulo: #0c145c;
+    --branco: #FFFFFF;
+}
+
+body{
+    width: 820px;
+    font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.75em;
+    margin: 0 auto
+}
+
+.div__titulo{
+    background-color: var(--azul_titulo);
+    color: var(--branco);
+    font-size: 20px;
+    text-align: center;
+}
+
+.input__formato{
+    border-radius: 6px;
+}
+
+.div__botao{
+    text-align: center;
+}
+
+.div__rodape{
+    background-color: var(--azul_titulo);
+    font-size: 0.5em;
+    color: var(--branco);
+    text-align: center;
+    margin: 2em 0;
+    padding: 0.5em;
+}
+
+.button__effect:hover{
+    background-color: var(--azul_titulo);
+    color: var(--branco);
+    font-weight: bold;
+    border: #000000 1px solid;
+    cursor: pointer;
+    height: 1.6em;
+    transition: 0.7s;
+}
+
+.input__foco:focus{
+    background-color: #d8dce7
+}
+
+.fieldset__legend{
+    font-weight: bold;
+}
+
+.fieldset{
+    margin: 1em 0;
+}
+
+.div__menu{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: transparent;
+    border: 2px #000000 solid;
+}
+
+.menu__opcao{
+    text-align: center;
+    padding: 1em;
+    font-weight: bolder;
+    width: 30%;
+}
+
+.menu__opcao:hover{
+    background-color: black;
+    color: white
+}
+
+a{
+    width: 50%;
+    text-decoration: none;
+    color: #047a43;
+    background-color: transparent;
+}
+
+a:hover{
+    background-color: black;
+}
