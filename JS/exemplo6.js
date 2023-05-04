@@ -1,40 +1,37 @@
-'''
-(Está em Python, transformar e adaptar para javascript)
+/** Desenvolva um programa que leia o nome e a idade de 3 pessoas e mostre o nome da pessoa mais velha e o nome da pessoa mais nova. */
 
-Exercício Python 056: Desenvolva um programa que leia o nome, idade e sexo de 4 pessoas.
-No final do programa, mostre: a média de idade do grupo, qual é o nome do homem mais velho
-e quantas mulheres têm menos de 20 anos.
-'''
+prompt = require('prompt-sync')();
 
-soma = 0
-cont_mulheres = 0
-media = 0
-maior = 0
-nomeHomemMais_Velho = ''
-
-
-for cont in range(1,4):
-
-    nome = input('Digite o seu nome: ')
-    sexo = input('Masculino ou Feminino ? [M/F]').upper()[0]
-    idade = int(input('Digite a sua idade : '))
-    print('-'*20)
-
-    soma = soma + idade #faz a soma entre todas as idades
-    media = soma / cont #pegaa soma das idades e divide pelo numero de pessoas
-
-    if sexo == 'M' and idade > maior:
-        maior = idade
-        nomeHomemMais_Velho = nome
-
-    if sexo == 'F' and idade < 20:
-        cont_mulheres += 1
-
-print('Media das idades é de {:.2f} '.format(media))
-print('Nome do mais velho é {}'.format(nomeHomemMais_Velho))
-
-if cont_mulheres == 0:
-    print('Não temos mulheres no grupo !')
-
-else:
-    print('A todo temos {} mulheres com menor de 20 anos'.format(cont_mulheres))
+// Função para ler o nome e a idade de uma pessoa
+function lerPessoa() {
+    let nome = prompt("Digite o nome da pessoa:");
+    let idade = parseInt(prompt("Digite a idade da pessoa:"));
+    return { nome, idade };
+  }
+  
+  // Ler os dados das 3 pessoas
+  let pessoa1 = lerPessoa();
+  let pessoa2 = lerPessoa();
+  let pessoa3 = lerPessoa();
+  
+  // Verificar a pessoa mais velha
+  let pessoaMaisVelha = pessoa1;
+  if (pessoa2.idade > pessoaMaisVelha.idade) {
+    pessoaMaisVelha = pessoa2;
+  }
+  if (pessoa3.idade > pessoaMaisVelha.idade) {
+    pessoaMaisVelha = pessoa3;
+  }
+  
+  // Verificar a pessoa mais nova
+  let pessoaMaisNova = pessoa1;
+  if (pessoa2.idade < pessoaMaisNova.idade) {
+    pessoaMaisNova = pessoa2;
+  }
+  if (pessoa3.idade < pessoaMaisNova.idade) {
+    pessoaMaisNova = pessoa3;
+  }
+  
+  // Exibir o nome da pessoa mais velha e da pessoa mais nova
+  console.log("Pessoa mais velha: " + pessoaMaisVelha.nome);
+  console.log("Pessoa mais nova: " + pessoaMaisNova.nome);
